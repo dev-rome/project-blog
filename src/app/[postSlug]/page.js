@@ -27,9 +27,12 @@ async function BlogPost({ params }) {
         publishedOn={frontmatter.publishedOn}
       />
       <div className={styles.page}>
-        <MDXRemote source={content} components={{
-          pre: CodeSnippet,
-        }} />
+        <MDXRemote
+          source={content}
+          components={{
+            pre: CodeSnippet,
+          }}
+        />
       </div>
     </article>
   );
