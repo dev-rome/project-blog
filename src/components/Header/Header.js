@@ -10,7 +10,6 @@ import Logo from "@/components/Logo";
 import VisuallyHidden from "@/components/VisuallyHidden";
 
 import styles from "./Header.module.css";
-import { set } from "date-fns";
 
 function Header({ initialTheme, className, ...delegated }) {
   const [theme, setTheme] = React.useState(initialTheme);
